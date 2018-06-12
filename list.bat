@@ -1,0 +1,1 @@
+dir /b "C:\Users\Jonathan\source\repos\AdaptiveGameAI\AdaptiveGameAI\bin\Debug\results" > list.txt

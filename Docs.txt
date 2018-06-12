@@ -1,0 +1,7 @@
+Eine Symmetrie ist eine Eigenschaft einer Form.
+Eine Symmetrie bildet einen Punkt auf einen anderen ab.
+Eine Symmetrie muss auf eine Array anwendbar sein.
+Eine Symmetrie sollte auf ein Array aus Arrays anwendbar sein.
+
+
+Eine Lage soll die Symmetrien interpretieren.

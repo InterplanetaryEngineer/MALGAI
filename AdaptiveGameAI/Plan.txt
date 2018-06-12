@@ -1,0 +1,52 @@
+
+init
+  set new net move to random direction and base magnitude
+  set new net new_move to copy of move
+  create two players with randomized weights (may be the same)
+repeat while time
+  init
+    change direction of new_move by random(mutation)
+    set magnitude of new_move to base + random(mutation)
+    change weights of player A by move
+    new board
+  while game not ended
+    play
+  if player A won
+    set other players to A
+    change move to new_move
+    set mutation to 0
+  else
+    set A to B
+    reset new_move to move
+    increase mutation
+save network
+
+class player
+  net weights
+
+  constructor of player:
+    randomize each weight
+    input nodes = board size = output nodes
+    first layer only connected to neighbors (should be board symmetric, e.g.), other layers fully interconnected
+
+  function analyse(boardstate):
+    for each layer:
+      apply weights and biases onto boardstate
+  function play:
+    analyse board
+    play the best ratted legal move
+    //later: Monte-Carlo tree search
+
+
+class net
+  list of layers
+  layer: array of nodes
+  node: array of weights with bias at last position
+
+  function add(other net)
+
+  function copy
+
+    function makenet
+
+
